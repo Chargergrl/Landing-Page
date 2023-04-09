@@ -1,5 +1,5 @@
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Raleway', sans-serif;
 
 }
 
@@ -29,24 +29,34 @@ body {
     padding-left: 100px;
     max-height: 450px;
     max-width: 300px;
+    box-shadow: 5px 5px 5px black;
+    padding-bottom: 30px;
+
 
 }
 
 .container-1 {
     display: flex;
     flex: 1 1 auto;
-    background-color: #1F2937;
+    background: linear-gradient(130deg, #1f2937, #373737, #1f2937);
+    background-size: 200% 200%;
+
+    -webkit-animation: Animation 5s ease infinite;
+    -moz-animation: Animation 5s ease infinite;
+    animation: Animation 5s ease infinite;
+    
     padding-top: 42px;
     padding-bottom: 60px;
     justify-content: space-evenly;
     align-items: center;
     flex-shrink: 0;
+
 }
 
 .title {
     display: flex;
     background-color: #1F2937;
-    font-family: Hero Main;
+    font-family: 'Playfair Display', serif;
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
@@ -62,23 +72,25 @@ body {
     align-items: center;
     height: 40vh;
     max-width: 60%;
+    padding-bottom: 20px;
 
 }
 
 .sign-button {
-    border-radius: 5px;
-    background-color: #3882f6;
-    font-size: 24px;
-    color: #E5E7EB;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: auto;
-    border-color: #F9FAF8;
-}
-.sign-button:hover {
-    background-color:#E5E7EB;
-    color:#3882f6;
-}
+        border-radius: 5px;
+        border: 1px solid #cccccc;
+        background-color: #3882f6;
+        color: #ffffff;
+        padding: 10px 20px;
+        transition: all 0.2s ease-in-out;
+      }
+      
+.sign-button:hover{
+        background-color: #e5e5e5;
+        color: #212121;
+        transform: scale(1.05);
+      }
+      
 
 img[src="storm.jpg"] {
     display: flex;
@@ -88,6 +100,7 @@ img[src="storm.jpg"] {
     max-height: 50%;
     max-width: 50%;
     padding: 16px;
+    box-shadow: 5px 5px 5px black;
 }
 
 .container-2 {
@@ -110,7 +123,14 @@ img[src="storm.jpg"] {
     height: 100%;
     width: 50%;
 
+}
 
+.clouds {
+    width: 70%;
+}
+
+.cloud-fig {
+    margin-top: 10px;
 }
 
 .mid {
@@ -150,6 +170,8 @@ img[src="clouds.jpg"] {
     border-radius: 10px;
     max-width: 100%;
     height: 100px;
+
+    box-shadow: 1px 2px 5px black;
 }
 
 .container-3 {
@@ -188,7 +210,7 @@ img[src="clouds.jpg"] {
     display: flex;
     flex-direction: row;
     margin: 60px;
-    background-color: #3882f6;
+    background-color: #001121;
     border-radius: 5px;
     color: #F9FAF8;
     padding: 36px;
@@ -208,15 +230,24 @@ img[src="clouds.jpg"] {
 
 .button2 {
     display: flex;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
     background-color: #3882f6;
-    color: #E5E7EB;
+    color: #ffffff;
+    padding: 10px 20px;
+    transition: all 0.2s ease-in-out;
+
     font-size: large;
     padding: 16px;
     justify-self: flex-end;
     align-self:flex-end;
-    border-radius: 5px;
-    border-color: #F9FAF8;
 }
+
+.button2:hover{
+        background-color: #e5e5e5;
+        color: #212121;
+        transform: scale(1.05);
+      }
 
 .left {
     display: flex;
